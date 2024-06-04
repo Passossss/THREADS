@@ -2,8 +2,8 @@ public class PrimosDuas {
 
     public static void main(String[] args) {
         int inicio = 2;
-        int fim = 10000000;
-        int metade = (inicio + fim) / 250;
+        int fim = 1000;
+        int metade = (inicio + fim) / 25;
 
         Thread thread1 = new Thread(() -> imprimirPrimos(inicio, metade, "T1"));
         Thread thread2 = new Thread(() -> imprimirPrimos(metade + 1, fim, "T2"));
@@ -12,7 +12,7 @@ public class PrimosDuas {
         thread2.start();
     }
 
-    private static void imprimirPrimos(int inicio, int fim) {
+    private static void imprimirPrimos(int inicio, int fim, String t2) {
         for (int i = inicio; i <= fim; i++) {
             if (ehPrimo(i)) {
                 System.out.println(i);
