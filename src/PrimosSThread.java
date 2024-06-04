@@ -4,6 +4,7 @@ public class PrimosSThread extends Thread {
         int inicio = 2;
         int fim = 10000000;
 
+
         for (int i = inicio; i <= fim; i++) {
             if (ehPrimo(i)) {
                 System.out.println(i);

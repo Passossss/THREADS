@@ -3,6 +3,7 @@ public class PrimosMult {
     public static void main(String[] args) {
         int inicio = 5;
         int fim = 10000000;
+        //int threads = 4;
         int intervalo = 2500;
 
         for (int i = inicio; i <= fim; i += intervalo) {
