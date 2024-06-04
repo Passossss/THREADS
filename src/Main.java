@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         int intervaloInicio = 2;
-        int intervaloFim = 100;
+        int intervaloFim = 10;
         //ex1 2,10 usar
 
         List<Integer> primosEncontrados = new ArrayList<>();
@@ -23,7 +23,8 @@ public class Main {
             threadsCriadas.add(thread);
         }*/
 
-        // para exercicio C) int metade = (intervaloFim - intervaloInicio) / 2;
+        // para exercicio C)
+        int metade = (intervaloFim - intervaloInicio) / 2;
 
         MinhaThread thread1 = new MinhaThread(intervaloInicio, metade, primosEncontrados);
         thread1.start();
