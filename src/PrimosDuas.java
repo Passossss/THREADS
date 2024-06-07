@@ -1,6 +1,6 @@
 public class PrimosDuas {
 
-    public static void main(String[] args) {
+    public static void main(int[] args) {
         int inicio = 2;
         int fim = 1000;
         int metade = (inicio + fim) / 2;

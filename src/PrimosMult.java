@@ -5,14 +5,14 @@ public class PrimosMult {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite o intervalo de início: ");
-        int inicio = scanner.nextInt();
+//        System.out.println("Digite o intervalo de início: ");
+        int inicio = Integer.parseInt(args[0]);
 
-        System.out.println("Digite o intervalo de fim: ");
-        int fim = scanner.nextInt();
+//        System.out.println("Digite o intervalo de fim: ");
+        int fim = Integer.parseInt(args[1]);
 
-        System.out.println("Digite quantas threads: ");
-        int qnt_threads = scanner.nextInt();
+//        System.out.println("Digite quantas threads: ");
+        int qnt_threads = Integer.parseInt(args[2]);
 
         int intervalo = (fim - inicio + 1) / qnt_threads;
 
